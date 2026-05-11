@@ -168,7 +168,7 @@ export default function Home(){
                         imageUrl={temp} 
                         imageText="Foto da Igreja"
                         title="Capela Santo Amaro"
-                        description="TEM QUE VER ISSO AI"
+                        description="Comunidade localizada no bairro Cristo Rei."
                         linkUrl="/capela-santo-amaro"
                     />
 
