@@ -173,14 +173,6 @@ export default function Home(){
                     />
 
                     <ChurchCard 
-                        imageUrl={temp} 
-                        imageText="Foto da Igreja"
-                        title="Capela São José"
-                        description="Comunidade localizada no bairro Centro"
-                        linkUrl="/capela-sao-jose"
-                    />
-
-                    <ChurchCard 
                         imageUrl={imgMilagres} 
                         imageText="Foto da Igreja"
                         title="Capela Nossa Senhora dos Milagres"

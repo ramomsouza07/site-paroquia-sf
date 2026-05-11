@@ -9,7 +9,6 @@ import Vicente from './pages/churchs/Vicente'
 
 import CristoRei from './pages/churchs/CristoRei';
 import Amaro from './pages/churchs/Amaro';
-import SaoJose from './pages/churchs/SaoJose';
 
 import NSMilagres from './pages/churchs/NSMilagres';
 import SagradaFamilia from './pages/churchs/SagradaFamilia';
@@ -33,8 +32,7 @@ export default function RoutesApp(){
                 
                 <Route path="/capela-cristo-rei" element={<CristoRei />} />
                 <Route path="/capela-santo-amaro" element={<Amaro />} />
-                <Route path="/capela-sao-jose" element={<SaoJose />} />
-
+                
                 <Route path="/capela-nossa-senhora-dos-milagres" element={<NSMilagres />} />
                 <Route path="/capela-sagrada-familia" element={<SagradaFamilia />} />
                 <Route path="/capela-nossa-senhora-de-fatima" element={<NSFatima />} />
