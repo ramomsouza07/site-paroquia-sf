@@ -2,8 +2,8 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 // Importações das imagens apontando para a pasta "outras"
-import imgFachada from '../../assets/outras/temp.png'; 
-import imgInterior from '../../assets/outras/temp.png'; 
+import imgFachada from '../../assets/nsfatima/nsfatima-exterior.jpeg'; 
+import imgInterior from '../../assets/nsfatima/nsfatima-interior.jpeg'; 
 import imgExtra from '../../assets/nsfatima/nossa_senhora_de_fatima.jpg'; 
 
 export default function NSFatima() {
@@ -56,11 +56,11 @@ export default function NSFatima() {
                                 Venha nos visitar e viver esse momento de graça conosco!
                             </p>
                             <p className="text-marrom-escuro font-bold text-[16px] bg-branco-amarelado py-[10px] px-[20px] rounded-[5px] w-full border border-marrom-claro/20">
-                                R. Mis. Salomão Ginsburg, 132-212, Vila dos Coroados <br/>
+                               Santa Catarina <br/>
                                 São Fidélis, RJ, 28400-000
                             </p>
                             <p className="text-marrom-claro text-[15px] mt-[15px] font-bold">
-                                📍 A apenas 3.0 km do Santuário.
+                                📍 A apenas 14.9 km do Santuário.
                             </p>
                         </div>
 
@@ -69,7 +69,7 @@ export default function NSFatima() {
                     {/* Mapa do Google embutido */}
                     <div className="mt-[30px] w-full bg-branco rounded-[10px] shadow-[0_4px_10px_rgba(0,0,0,0.05)] border-t-[4px] border-marrom-claro overflow-hidden">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7417.393892743363!2d-41.7777831852436!3d-21.63672971040533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdadf061945c6b%3A0xe5590f519833d4ac!2sCapela%20Nossa%20Senhora%20De%20F%C3%A1tima!5e0!3m2!1spt-BR!2sbr!4v1774267634745!5m2!1spt-BR!2sbr" 
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d14841.823614167864!2d-41.70579561147255!3d-21.56812031448157!2m1!1f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4d8a7f32b75d%3A0x3ece2229c932de33!2sCapela%20Nossa%20Senhora%20de%20F%C3%A1tima%20em%20Santa%20Catarina!5e0!3m2!1spt-BR!2sbr!4v1778704510040!5m2!1spt-BR!2sbr" 
                             className="w-full h-[350px] md:h-[450px]" 
                             style={{ border: 0 }} 
                             allowFullScreen 
@@ -92,7 +92,7 @@ export default function NSFatima() {
                             <img 
                                 src={imgFachada} 
                                 alt="Fachada da Capela Nossa Senhora de Fátima" 
-                                className="w-full h-[450px] md:h-[500px] object-cover rounded-[8px] shadow-sm transition-transform duration-300 hover:scale-[1.02] object-center md:col-span-2"
+                                className="w-full h-[450px] md:h-[500px] object-cover object-[25%_75%] rounded-[8px] shadow-sm transition-transform duration-300 hover:scale-[1.02] object-center md:col-span-2"
                             />
                             
                             {/* Interior e Imagem: Ficam lado a lado */}
