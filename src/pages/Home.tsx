@@ -6,6 +6,7 @@ import imgVic from "../assets/sao_vicente/sao_vicente_2.png"
 import imgMilagres from "../assets/nsmilagres/igreja-valao-1.jpeg"
 import imgFamilia from "../assets/sagrada_familia/sagrada_familia.png"
 import imgFatima from "../assets/nsfatima/nsfatima-card.jpeg"
+import imgRita from "../assets/outras/temp.png"
 
 // Importe a foto do Padre aqui (ajuste o caminho conforme sua pasta)
 import imgPadre from "../assets/outras/pe_gilberto.jpg" 
@@ -40,7 +41,7 @@ export default function Home(){
             <section className="bg-gradient-to-b from-marrom-escuro to-marrom-claro text-branco text-center py-[100px] px-[20px]">
                 <div className="max-w-[1200px] mx-auto">
                     <h1 className="text-[40px] md:text-[56px] mb-[20px] text-branco [text-shadow:1px_1px_3px_rgba(0,0,0,0.3)] leading-tight">
-                        Igreja Matriz de São Fidélis de Sigmaringa
+                        Paróquia Santuário de São Fidélis de Sigmaringa
                     </h1>
                     <p className="text-[20px] mb-[40px]">
                         Um marco de fé, história e devoção às margens do Rio Paraíba do Sul.
@@ -207,6 +208,13 @@ export default function Home(){
                         title="Capela Nossa Senhora de Fátima"
                         description="Comunidade localizada em Santa Catarina."
                         linkUrl="/capela-nossa-senhora-de-fatima"
+                    />
+                     <ChurchCard 
+                        imageUrl={imgRita} 
+                        imageText="Foto da Igreja"
+                        title="Capela Santa Rita De Cássia"
+                        description="Comunidade localizada em Grumarim."
+                        linkUrl="/capela-santa-rita-de-cassia"
                     />
                 </div>
             </section>

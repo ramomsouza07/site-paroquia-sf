@@ -14,6 +14,8 @@ import NSMilagres from './pages/churchs/NSMilagres';
 import SagradaFamilia from './pages/churchs/SagradaFamilia';
 import NSFatima from './pages/churchs/NSFatima';
 
+import RitaCassia from './pages/churchs/RitaCassia';
+
 import Services from './pages/Services'
 import Contacts from './pages/Contacts'
 import Intencoes from './pages/Intencoes';
@@ -36,6 +38,8 @@ export default function RoutesApp(){
                 <Route path="/capela-nossa-senhora-dos-milagres" element={<NSMilagres />} />
                 <Route path="/capela-sagrada-familia" element={<SagradaFamilia />} />
                 <Route path="/capela-nossa-senhora-de-fatima" element={<NSFatima />} />
+                
+                <Route path="/capela-santa-rita-de-cassia" element={<RitaCassia />} />
 
                 <Route path="/intencoes" element={<Intencoes />} />
                 <Route path="/servicos" element={<Services />} />
