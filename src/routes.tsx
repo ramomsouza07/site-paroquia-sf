@@ -6,9 +6,10 @@ import Home from './pages/Home'
 import Services from './pages/Services'
 import Contacts from './pages/Contacts'
 import Intencoes from './pages/Intencoes';
-import Article from './pages/Article'
 import NotFound from './pages/NotFound';
+import Articles from './pages/Article';
 
+import Teste from './pages/articles/teste';
 
 import Matriz from './pages/churchs/Matriz'
 import Sebastiao from './pages/churchs/Sebastiao';
@@ -20,10 +21,6 @@ import SagradaFamilia from './pages/churchs/SagradaFamilia';
 import NSFatima from './pages/churchs/NSFatima';
 import RitaCassia from './pages/churchs/RitaCassia';
 
-
-import Teste from './pages/articles/teste';
-
-
 export default function RoutesApp(){
     return(
         <BrowserRouter>
@@ -33,9 +30,10 @@ export default function RoutesApp(){
                 <Route path="/intencoes" element={<Intencoes />} />
                 <Route path="/servicos" element={<Services />} />
                 <Route path='/contatos' element={<Contacts/>} />
-                <Route path='/artigos' element={<Article/>} />
                 <Route path="*" element={<NotFound />} />
+                <Route path="/artigos" element={<Articles />} />
 
+                <Route path="/artigos/TESTE" element={<Teste />} />
                 
                 
                 <Route path='/matriz' element={<Matriz/>} />
@@ -47,11 +45,6 @@ export default function RoutesApp(){
                 <Route path="/capela-sagrada-familia" element={<SagradaFamilia />} />
                 <Route path="/capela-nossa-senhora-de-fatima" element={<NSFatima />} />
                 <Route path="/capela-santa-rita-de-cassia" element={<RitaCassia />} />
-
-
-
-                <Route path="/artigos/teste" element={<Teste />} />
-
 
             </Routes>
         </BrowserRouter>
