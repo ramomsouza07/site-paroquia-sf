@@ -9,7 +9,7 @@ import Intencoes from './pages/Intencoes';
 import NotFound from './pages/NotFound';
 import Articles from './pages/Article';
 
-import Teste from './pages/articles/teste';
+import Teste from './pages/articles/Teste';
 
 import Matriz from './pages/churchs/Matriz'
 import Sebastiao from './pages/churchs/Sebastiao';
