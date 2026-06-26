@@ -21,6 +21,12 @@ import SagradaFamilia from './pages/churchs/SagradaFamilia';
 import NSFatima from './pages/churchs/NSFatima';
 import RitaCassia from './pages/churchs/RitaCassia';
 
+
+import NSRosario from './pages/churchs/NSRosario';
+import NSAparecida from './pages/churchs/NSAparecida';
+import SantaAna from './pages/churchs/SantaAna';
+
+
 export default function RoutesApp(){
     return(
         <BrowserRouter>
@@ -45,6 +51,10 @@ export default function RoutesApp(){
                 <Route path="/capela-sagrada-familia" element={<SagradaFamilia />} />
                 <Route path="/capela-nossa-senhora-de-fatima" element={<NSFatima />} />
                 <Route path="/capela-santa-rita-de-cassia" element={<RitaCassia />} />
+                
+                <Route path="/capela-nossa-senhora-aparecida" element={<NSAparecida />} />
+                <Route path="/capela-nossa-senhora-do-rosario" element={<NSRosario />} />
+                <Route path="/capela-santa-ana" element={<SantaAna />} />
 
             </Routes>
         </BrowserRouter>

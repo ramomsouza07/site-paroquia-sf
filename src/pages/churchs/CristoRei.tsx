@@ -2,7 +2,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 // Importações das imagens apontando para a pasta "outras"
-import imgFachada from '../../assets/outras/temp.png'; 
+import imgFachada from '../../assets/cristo_rei/cristo-rei-fachada.jpeg'; 
 import imgInterior from '../../assets/outras/temp.png'; 
 import imgExtra from '../../assets/cristo_rei/cristo_rei_imagem.png'; 
 
@@ -92,7 +92,7 @@ export default function CristoRei() {
                             <img 
                                 src={imgFachada} 
                                 alt="Fachada da Capela Cristo Rei" 
-                                className="w-full h-[450px] md:h-[500px] object-cover rounded-[8px] shadow-sm transition-transform duration-300 hover:scale-[1.02] object-center md:col-span-2"
+                                className="w-full h-[450px] md:h-[500px] object-cover object-[50%_50%] rounded-[8px] shadow-sm transition-transform duration-300 hover:scale-[1.02] object-center md:col-span-2"
                             />
                             
                             {/* Interior e Imagem: Lado a lado */}

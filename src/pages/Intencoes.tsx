@@ -33,6 +33,27 @@ export default function Intencoes() {
                             </p>
                         </div>
 
+                        {/* NOVO CARD: ATALHO PARA O WHATSAPP */}
+                        <div className="bg-[#F0FDF4] border-l-[5px] border-[#25D366] p-[20px] rounded-[8px] mb-[40px] flex flex-col sm:flex-row items-center justify-between gap-[20px] shadow-sm">
+                            <div className="text-center sm:text-left">
+                                <h3 className="text-[#15803D] text-[18px] font-bold mb-[5px] flex items-center justify-center sm:justify-start gap-[8px]">
+                                    <i className="fa-brands fa-whatsapp text-[22px]"></i>
+                                    Sentiu dificuldade?
+                                </h3>
+                                <p className="text-cinza-escuro text-[15px]">
+                                    Se preferir, você pode enviar suas intenções diretamente para a nossa secretaria pelo WhatsApp.
+                                </p>
+                            </div>
+                            <a 
+                                href="https://wa.me/552227581146?text=Quero%20enviar%20uma%20inten%C3%A7%C3%A3o!" 
+                                target="_blank" 
+                                rel="noreferrer"
+                                className="bg-[#25D366] text-white py-[12px] px-[24px] rounded-[5px] font-bold whitespace-nowrap transition-colors duration-300 hover:bg-[#128C7E] flex items-center gap-[8px] shadow-md hover:-translate-y-[2px]"
+                            >
+                                Enviar Mensagem
+                            </a>
+                        </div>
+
                         {/* O GOOGLE FORMS FICA AQUI */}
                         <div className="w-full overflow-hidden rounded-[8px] flex justify-center">
                             {/* SUBSTITUA O LINK DO SRC PELO LINK DO SEU GOOGLE FORMS */}

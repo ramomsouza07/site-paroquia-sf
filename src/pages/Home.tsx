@@ -7,6 +7,12 @@ import imgMilagres from "../assets/nsmilagres/igreja-valao-1.jpeg"
 import imgFamilia from "../assets/sagrada_familia/sagrada_familia.png"
 import imgFatima from "../assets/nsfatima/nsfatima-card.jpeg"
 import imgRita from "../assets/outras/temp.png"
+import imgRosario from "../assets/rosario/rosario_2.png"
+import imgAparecida from "../assets/nsaparecida/nsaparecida-fachada.jpeg"
+import imgAmaro from "../assets/santo_amaro/st_amaro_fachada.png"
+import imgCristo from "../assets/cristo_rei/cristo-rei-fachada.jpeg"
+
+
 
 // Importe a foto do Padre aqui (ajuste o caminho conforme sua pasta)
 import imgPadre from "../assets/outras/pe_gilberto.jpg" 
@@ -175,14 +181,14 @@ export default function Home(){
                         linkUrl="/capela-sao-vicente"
                     />
                     <ChurchCard 
-                        imageUrl={temp} 
+                        imageUrl={imgCristo} 
                         imageText="Foto da Igreja"
                         title="Capela Cristo Rei"
                         description="Comunidade localizada no bairro Cristo Rei."
                         linkUrl="/capela-cristo-rei"
                     />
                     <ChurchCard 
-                        imageUrl={temp} 
+                        imageUrl={imgAmaro} 
                         imageText="Foto da Igreja"
                         title="Capela Santo Amaro"
                         description="Comunidade localizada no bairro Cristo Rei."
@@ -215,6 +221,27 @@ export default function Home(){
                         title="Capela Santa Rita De Cássia"
                         description="Comunidade localizada em Grumarim."
                         linkUrl="/capela-santa-rita-de-cassia"
+                    />
+                    <ChurchCard 
+                        imageUrl={imgAparecida} 
+                        imageText="Foto da Igreja"
+                        title="Capela Nossa Senhora Aparecida"
+                        description="Comunidade localizada na Chatuba."
+                        linkUrl="/capela-nossa-senhora-aparecida"
+                    />
+                    <ChurchCard 
+                        imageUrl={imgRosario} 
+                        imageText="Foto da Igreja"
+                        title="Capela Nossa Senhora do Rosário"
+                        description="Comunidade localizada no Centro."
+                        linkUrl="/capela-nossa-senhora-do-rosario"
+                    />
+                    <ChurchCard 
+                        imageUrl={temp} 
+                        imageText="Foto da Igreja"
+                        title="Capela Santa Ana"
+                        description="Comunidade localizada na Fazenda da Pedra."
+                        linkUrl="/capela-santa-ana"
                     />
                 </div>
             </section>

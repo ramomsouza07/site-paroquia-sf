@@ -25,13 +25,6 @@ export default function Article() {
                 <section className="max-w-[800px] mx-auto mt-[50px] px-[20px] flex flex-col gap-[30px]">
                     
                     <ArticleCard 
-                        titulo="A Família como Igreja Doméstica"
-                        descricao="Uma reflexão sobre como o ambiente familiar é o primeiro e mais importante espaço para a vivência da fé cristã, o ensino dos valores do Evangelho e o amor ao próximo."
-                        data="15/06/2026"
-                        linkUrl="/artigos/familia-igreja-domestica"
-                    />
-
-                    <ArticleCard 
                         titulo="TESTE"
                         descricao="TESTE"
                         data="15/06/2026"
