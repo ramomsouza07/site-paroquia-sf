@@ -1,0 +1,18 @@
+/* Estilo do placeholder do TipTap — precisa ser CSS de verdade porque
+   depende de :before + content: attr(), que o Tailwind não cobre bem
+   com classes utilitárias. */
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #9ca3af;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror {
+  min-height: 260px;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}

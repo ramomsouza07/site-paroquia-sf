@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { criarArtigo } from "../../api/artigos";
 import { enviarImagem } from "../../api/upload";
+import EditorArtigo from "../../components/admin/EditorArtigo";
 
 export default function ArtigoForm() {
     const { token, logout } = useAuth();
@@ -34,6 +35,14 @@ export default function ArtigoForm() {
     async function handleSubmit(e: FormEvent) {
         e.preventDefault();
         if (!token) return redirecionarParaLogin();
+
+        // O editor não tem "required" nativo do navegador como um textarea
+        // teria, então valida manualmente se sobrou algum texto de verdade.
+        const conteudoSemTags = conteudo.replace(/<[^>]*>/g, "").trim();
+        if (!conteudoSemTags) {
+            setErro("O conteúdo do artigo não pode ficar vazio.");
+            return;
+        }
 
         setEnviando(true);
         setErro(null);
@@ -105,17 +114,12 @@ export default function ArtigoForm() {
 
                 <label className="flex flex-col gap-[8px]">
                     <span className="text-marrom-escuro font-bold">Conteúdo completo</span>
-                    <textarea
+                    <EditorArtigo
                         value={conteudo}
-                        onChange={(e) => setConteudo(e.target.value)}
-                        rows={10}
-                        required
-                        className="px-[15px] py-[12px] rounded-[8px] border border-gray-300 focus:outline-none focus:border-mostarda font-mono text-[14px]"
+                        onChange={setConteudo}
+                        token={token}
+                        onNaoAutorizado={redirecionarParaLogin}
                     />
-                    <span className="text-[13px] text-gray-500">
-                        Aceita HTML simples (ex: &lt;p&gt;, &lt;strong&gt;, &lt;a&gt;). Um editor rico
-                        pode substituir este campo depois.
-                    </span>
                 </label>
 
                 <label className="flex flex-col gap-[8px]">

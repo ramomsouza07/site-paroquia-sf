@@ -15,6 +15,12 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.2.0",
     "@prisma/client": "^6.19.3",
+    "@tiptap/extension-image": "^3.30.5",
+    "@tiptap/extension-link": "^3.30.5",
+    "@tiptap/extension-placeholder": "^3.30.5",
+    "@tiptap/pm": "^3.30.5",
+    "@tiptap/react": "^3.30.5",
+    "@tiptap/starter-kit": "^3.30.5",
     "bcryptjs": "^3.0.3",
     "fastify": "^5.8.5",
     "react": "^19.2.0",
