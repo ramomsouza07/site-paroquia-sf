@@ -18,7 +18,7 @@ export default function Intencoes() {
                     </p>
                 </section>
 
-                {/* ÁREA DO FORMULÁRIO */}
+                
                 <section className="max-w-[800px] mx-auto px-[20px] mt-[60px]">
                     
                     <div className="bg-branco p-[30px] md:p-[40px] rounded-[10px] shadow-[0_5px_15px_rgba(0,0,0,0.1)] border-t-[4px] border-mostarda">
@@ -33,7 +33,27 @@ export default function Intencoes() {
                             </p>
                         </div>
 
-                        {/* NOVO CARD: ATALHO PARA O WHATSAPP */}
+                        <div className="bg-[#F0FDF4] border-l-[5px] border-[#25D366] p-[20px] rounded-[8px] mb-[40px] flex flex-col sm:flex-row items-center justify-between gap-[20px] shadow-sm">
+                            <div className="text-center sm:text-left">
+                                <h3 className="text-[#15803D] text-[18px] font-bold mb-[5px] flex items-center justify-center sm:justify-start gap-[8px]">
+                                    <i className="fa-brands fa-whatsapp text-[22px]"></i>
+                                    Envie sua intenção para nosso Whatsapp!
+                                </h3>
+                                <p className="text-cinza-escuro text-[15px]">
+                                    Dentro de alguns instantes, nossa secretaria irá te responder.
+                                </p>
+                            </div>
+                            <a 
+                                href="https://wa.me/552227581146?text=Quero%20enviar%20uma%20inten%C3%A7%C3%A3o!" 
+                                target="_blank" 
+                                rel="noreferrer"
+                                className="bg-[#25D366] text-white py-[12px] px-[24px] rounded-[5px] font-bold whitespace-nowrap transition-colors duration-300 hover:bg-[#128C7E] flex items-center gap-[8px] shadow-md hover:-translate-y-[2px]"
+                            >
+                                Enviar Mensagem
+                            </a>
+                        </div>
+
+                        {/*
                         <div className="bg-[#F0FDF4] border-l-[5px] border-[#25D366] p-[20px] rounded-[8px] mb-[40px] flex flex-col sm:flex-row items-center justify-between gap-[20px] shadow-sm">
                             <div className="text-center sm:text-left">
                                 <h3 className="text-[#15803D] text-[18px] font-bold mb-[5px] flex items-center justify-center sm:justify-start gap-[8px]">
@@ -53,10 +73,10 @@ export default function Intencoes() {
                                 Enviar Mensagem
                             </a>
                         </div>
+                        */}
 
-                        {/* O GOOGLE FORMS FICA AQUI */}
+                        {/*
                         <div className="w-full overflow-hidden rounded-[8px] flex justify-center">
-                            {/* SUBSTITUA O LINK DO SRC PELO LINK DO SEU GOOGLE FORMS */}
                             <iframe 
                                 src="https://docs.google.com/forms/d/e/1FAIpQLSfsNBZ2QXBc2GX9Zq8tfzk_CPOd8Xd4RHigR_G185g9Q8b2_Q/viewform?usp=publish-editor" 
                                 className="w-full min-h-[800px]" 
@@ -68,11 +88,11 @@ export default function Intencoes() {
                                 Carregando formulário...
                             </iframe>
                         </div>
-
+                        */}
                     </div>
 
                 </section>
-
+                
             </main>
 
             <Footer />

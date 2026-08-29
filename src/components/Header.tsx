@@ -47,6 +47,8 @@ export default function Header() {
                         <li><Link to="/" onClick={() => handleScrollToSection('dizimo')} className="text-[16px] font-medium text-white transition-all duration-300 py-[5px] hover:[text-shadow:0px_4px_12px_rgba(255,255,255,0.6)]">Dízimo</Link></li>
                         {/* Novos links de navegação */}
                         <li><Link to="/servicos" className="text-[16px] font-medium text-white transition-all duration-300 py-[5px] hover:[text-shadow:0px_4px_12px_rgba(255,255,255,0.6)]">Serviços</Link></li>
+                        <li><Link to="/padres" className="text-[16px] font-medium text-white transition-all duration-300 py-[5px] hover:[text-shadow:0px_4px_12px_rgba(255,255,255,0.6)]">Padres</Link></li>
+                        <li><Link to="/artigos" className="text-[16px] font-medium text-white transition-all duration-300 py-[5px] hover:[text-shadow:0px_4px_12px_rgba(255,255,255,0.6)]">Artigos</Link></li>
                         <li><Link to="/intencoes" className="text-[16px] font-medium text-white transition-all duration-300 py-[5px] hover:[text-shadow:0px_4px_12px_rgba(255,255,255,0.6)]">Intenções</Link></li>
                         <li><Link to="/contatos" className="text-[16px] font-medium text-white transition-all duration-300 py-[5px] hover:[text-shadow:0px_4px_12px_rgba(255,255,255,0.6)]">Contato</Link></li>
                     </ul>

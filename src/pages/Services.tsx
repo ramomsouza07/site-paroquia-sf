@@ -3,6 +3,10 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default function Servicos() {
+    
+    // Classe padrão para os cartões
+    const cardClass = "w-full md:w-[calc(50%-15px)] lg:w-[calc(33.333%-20px)] bg-branco p-[30px] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] transition-transform duration-300 hover:-translate-y-[5px] flex flex-col items-center";
+
     return (
         <>
             <Header />
@@ -19,242 +23,324 @@ export default function Servicos() {
                     </p>
                 </section>
 
-                {/* 2. GRID DE SERVIÇOS, SACRAMENTOS E PASTORAIS */}
-                <section className="max-w-[1200px] mx-auto px-[20px] mt-[60px]">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+                <div className="max-w-[1200px] mx-auto px-[20px] mt-[80px]">
+                    
+                    {/* =========================================
+                        SEÇÃO 1: SACRAMENTOS E LITURGIA 
+                    ========================================= */}
+                    <section className="mb-[80px]">
+                        <div className="flex flex-col items-center mb-[40px] text-center">
+                            <h2 className="text-marrom-escuro text-[32px] md:text-[36px] font-bold flex items-center justify-center gap-[12px] mb-[10px]">
+                                <i className="fa-solid fa-cross text-marrom-claro text-[26px]"></i>
+                                Sacramentos e Liturgia
+                            </h2>
+                            <div className="w-[80px] h-[4px] bg-mostarda rounded-full"></div>
+                        </div>
                         
-                        {/* CONFISSÕES E DIREÇÃO ESPIRITUAL */}
-                        <div className="bg-branco p-[30px] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] border-t-[4px] border-marrom-claro transition-transform duration-300 hover:-translate-y-[5px] flex flex-col">
-                            <div className="text-marrom-claro text-[40px] mb-[15px] flex justify-center">
-                                <i className="fa-solid fa-hands-praying"></i>
-                            </div>
-                            <h2 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
-                                Confissões
-                            </h2>
-                            <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
-                                O Sacramento da Reconciliação nos devolve a graça e a amizade com Deus. O atendimento com o padre ocorre semanalmente na Matriz.
-                            </p>
-                            <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center mt-auto">
-                                <p className="text-cinza-escuro text-[14px]">
-                                    <strong className="text-marrom-escuro">Quintas-feiras:</strong> 14h às 16h<br/>
-                                    <strong className="text-marrom-escuro">Sextas-feiras:</strong> 9h às 11h30
+                        <div className="flex flex-wrap justify-center gap-[30px]">
+                            
+                            {/* CONFISSÕES */}
+                            <div className={`${cardClass} border-t-[4px] border-marrom-claro`}>
+                                <div className="text-marrom-claro text-[40px] mb-[15px]">
+                                    <i className="fa-solid fa-hands-praying"></i>
+                                </div>
+                                <h3 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
+                                    Confissões
+                                </h3>
+                                <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
+                                    O Sacramento da Reconciliação nos devolve a graça e a amizade com Deus. O atendimento com o padre ocorre semanalmente na Matriz.
                                 </p>
+                                <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center w-full mt-auto">
+                                    <p className="text-cinza-escuro text-[14px]">
+                                        <strong className="text-marrom-escuro">Quintas-feiras:</strong> 14h às 16h<br/>
+                                        <strong className="text-marrom-escuro">Sextas-feiras:</strong> 9h às 11h30
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* BATISMO */}
-                        <div className="bg-branco p-[30px] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] border-t-[4px] border-marrom-claro transition-transform duration-300 hover:-translate-y-[5px] flex flex-col">
-                            <div className="text-marrom-claro text-[40px] mb-[15px] flex justify-center">
-                                <i className="fa-solid fa-droplet"></i>
-                            </div>
-                            <h2 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
-                                Batismo
-                            </h2>
-                            <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
-                                A porta de entrada para a vida cristã. Para batizar o seu filho(a), os pais e padrinhos devem participar do Encontro de Preparação.
-                            </p>
-                            <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center mt-auto">
-                                <p className="text-cinza-escuro text-[14px]">
-                                    Procure a Secretaria com antecedência para verificar o calendário de cursos e celebrações.
+                            {/* BATISMO - COM BOTÃO DO WHATSAPP */}
+                            <div className={`${cardClass} border-t-[4px] border-marrom-claro`}>
+                                <div className="text-marrom-claro text-[40px] mb-[15px]">
+                                    <i className="fa-solid fa-droplet"></i>
+                                </div>
+                                <h3 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
+                                    Batismo
+                                </h3>
+                                <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
+                                    A porta de entrada para a vida cristã. Para batizar o seu filho(a), os pais e padrinhos devem participar do Encontro de Preparação.
                                 </p>
+                                <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center w-full mt-auto flex flex-col gap-[10px]">
+                                    <p className="text-cinza-escuro text-[14px]">
+                                        Verifique na Secretaria o calendário de cursos e celebrações.
+                                    </p>
+                                    <a 
+                                        href="https://wa.me/552227581146?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Batismo." 
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                        className="bg-[#25D366] text-white py-[8px] px-[10px] rounded-[5px] text-[14px] font-bold transition-colors duration-300 hover:bg-[#128C7E] flex items-center justify-center gap-[8px]"
+                                    >
+                                        <i className="fa-brands fa-whatsapp text-[18px]"></i>
+                                        Informações do Batismo
+                                    </a>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* MATRIMÔNIO */}
-                        <div className="bg-branco p-[30px] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] border-t-[4px] border-marrom-claro transition-transform duration-300 hover:-translate-y-[5px] flex flex-col">
-                            <div className="text-marrom-claro text-[40px] mb-[15px] flex justify-center">
-                                <i className="fa-solid fa-ring"></i>
-                            </div>
-                            <h2 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
-                                Matrimônio
-                            </h2>
-                            <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
-                                Vai casar-se? O Sacramento do Matrimônio exige preparação espiritual e organização documental rigorosa.
-                            </p>
-                            <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center mt-auto">
-                                <p className="text-cinza-escuro text-[14px]">
-                                    Agende com no mínimo <strong>3 meses de antecedência</strong> e informe-se sobre o Curso de Noivos.
+                            {/* MATRIMÔNIO - COM BOTÃO DO WHATSAPP */}
+                            <div className={`${cardClass} border-t-[4px] border-marrom-claro`}>
+                                <div className="text-marrom-claro text-[40px] mb-[15px]">
+                                    <i className="fa-solid fa-ring"></i>
+                                </div>
+                                <h3 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
+                                    Matrimônio
+                                </h3>
+                                <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
+                                    Vai casar-se? O Sacramento do Matrimônio exige preparação espiritual e organização documental rigorosa.
                                 </p>
+                                <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center w-full mt-auto flex flex-col gap-[10px]">
+                                    <p className="text-cinza-escuro text-[14px]">
+                                        Agende com no mínimo <strong>3 meses de antecedência</strong>.
+                                    </p>
+                                    <a 
+                                        href="https://wa.me/552227581146?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20marca%C3%A7%C3%A3o%20de%20Casamento." 
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                        className="bg-[#25D366] text-white py-[8px] px-[10px] rounded-[5px] text-[14px] font-bold transition-colors duration-300 hover:bg-[#128C7E] flex items-center justify-center gap-[8px]"
+                                    >
+                                        <i className="fa-brands fa-whatsapp text-[18px]"></i>
+                                        Agendar Matrimônio
+                                    </a>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* CATEQUESE */}
-                        <div className="bg-branco p-[30px] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] border-t-[4px] border-marrom-claro transition-transform duration-300 hover:-translate-y-[5px] flex flex-col">
-                            <div className="text-marrom-claro text-[40px] mb-[15px] flex justify-center">
-                                <i className="fa-solid fa-book-bible"></i>
-                            </div>
-                            <h2 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
-                                Catequese
-                            </h2>
-                            <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
-                                Preparação para a Primeira Eucaristia e Crisma, formando crianças, jovens e adultos no amor de Cristo e nos ensinamentos da Igreja.
-                            </p>
-                            <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center mt-auto">
-                                <p className="text-cinza-escuro text-[14px]">
-                                    As inscrições para novas turmas ocorrem anualmente. Fique atento aos nossos avisos!
+                            {/* UNÇÃO DOS ENFERMOS */}
+                            <div className={`${cardClass} border-t-[4px] border-marrom-claro`}>
+                                <div className="text-marrom-claro text-[40px] mb-[15px]">
+                                    <i className="fa-solid fa-hand-holding-heart"></i>
+                                </div>
+                                <h3 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
+                                    Unção dos Enfermos
+                                </h3>
+                                <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
+                                    Conforto e graça para os irmãos doentes ou idosos. O padre realiza visitas domiciliares e hospitalares para ministrar o sacramento.
                                 </p>
+                                <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center w-full mt-auto">
+                                    <p className="text-cinza-escuro text-[14px]">
+                                        Em caso de necessidade, entre em contato imediatamente com a Secretaria Paroquial.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* FORMAÇÃO DE COROINHAS */}
-                        <div className="bg-branco p-[30px] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] border-t-[4px] border-marrom-claro transition-transform duration-300 hover:-translate-y-[5px] flex flex-col">
-                            <div className="text-marrom-claro text-[40px] mb-[15px] flex justify-center">
-                                <i className="fa-solid fa-bell"></i>
-                            </div>
-                            <h2 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
-                                Coroinhas e Acólitos
-                            </h2>
-                            <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
-                                Preparação litúrgica e espiritual para crianças e jovens que sentem o chamado para servir ao altar com dedicação e amor.
-                            </p>
-                            <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center mt-auto">
-                                <p className="text-cinza-escuro text-[14px]">
-                                    Os encontros ocorrem periodicamente. Procure a coordenação após as missas ou na Secretaria.
+                            {/* INTENÇÕES DE MISSA */}
+                            <div className={`${cardClass} border-t-[4px] border-marrom-claro`}>
+                                <div className="text-marrom-claro text-[40px] mb-[15px]">
+                                    <i className="fa-solid fa-scroll"></i>
+                                </div>
+                                <h3 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
+                                    Intenções de Missa
+                                </h3>
+                                <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
+                                    Reze pelos seus entes queridos falecidos, em ação de graças por aniversários ou pedidos de saúde e libertação.
                                 </p>
+                                <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center w-full mt-auto">
+                                    <p className="text-cinza-escuro text-[14px]">
+                                        Marque suas intenções presencialmente na Secretaria ou antes do início das missas.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* FORMAÇÃO DE SERVOS */}
-                        <div className="bg-branco p-[30px] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] border-t-[4px] border-marrom-claro transition-transform duration-300 hover:-translate-y-[5px] flex flex-col">
-                            <div className="text-marrom-claro text-[40px] mb-[15px] flex justify-center">
-                                <i className="fa-solid fa-people-group"></i>
-                            </div>
-                            <h2 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
-                                Formação de Servos
-                            </h2>
-                            <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
-                                Encontros de espiritualidade e capacitação para ministros, leitores, equipes de liturgia, grupos de oração e agentes de pastorais.
-                            </p>
-                            <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center mt-auto">
-                                <p className="text-cinza-escuro text-[14px]">
-                                    Acompanhe nossa Agenda Paroquial para saber as datas dos próximos encontros e retiros formativos.
+                            <div className={`${cardClass} border-t-[4px] border-marrom-claro`}>
+                                <div className="text-marrom-claro text-[40px] mb-[15px]">
+                                    <i className="fa-solid fa-dove"></i>
+                                </div>
+                                <h3 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
+                                    Crisma
+                                </h3>
+                                <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
+                                    O sacramento da Crisma confirma o Batismo e nos fortalece com os dons do Espírito Santo para sermos verdadeiras testemunhas de Cristo.
                                 </p>
+                                <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center w-full mt-auto">
+                                    <p className="text-cinza-escuro text-[14px]">
+                                        As turmas de preparação para jovens e adultos abrem anualmente. Procure a Secretaria para mais informações.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* UNÇÃO DOS ENFERMOS */}
-                        <div className="bg-branco p-[30px] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] border-t-[4px] border-marrom-claro transition-transform duration-300 hover:-translate-y-[5px] flex flex-col">
-                            <div className="text-marrom-claro text-[40px] mb-[15px] flex justify-center">
-                                <i className="fa-solid fa-hand-holding-heart"></i>
-                            </div>
-                            <h2 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
-                                Unção dos Enfermos
+                        </div>
+                    </section>
+
+                    {/* =========================================
+                        SEÇÃO 2: PASTORAIS
+                    ========================================= */}
+                    <section className="mb-[80px]">
+                        <div className="flex flex-col items-center mb-[40px] text-center">
+                            <h2 className="text-marrom-escuro text-[32px] md:text-[36px] font-bold flex items-center justify-center gap-[12px] mb-[10px]">
+                                <i className="fa-solid fa-leaf text-mostarda text-[26px]"></i>
+                                Pastorais
                             </h2>
-                            <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
-                                Conforto e graça para os irmãos doentes ou idosos. O padre realiza visitas domiciliares e hospitalares para ministrar o sacramento.
-                            </p>
-                            <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center mt-auto">
-                                <p className="text-cinza-escuro text-[14px]">
-                                    Em caso de necessidade, entre em contato imediatamente com a Secretaria Paroquial.
-                                </p>
-                            </div>
+                            <div className="w-[80px] h-[4px] bg-mostarda rounded-full"></div>
                         </div>
-
-                        {/* INTENÇÕES DE MISSA */}
-                        <div className="bg-branco p-[30px] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] border-t-[4px] border-marrom-claro transition-transform duration-300 hover:-translate-y-[5px] flex flex-col">
-                            <div className="text-marrom-claro text-[40px] mb-[15px] flex justify-center">
-                                <i className="fa-solid fa-scroll"></i>
+                        
+                        <div className="flex flex-wrap justify-center gap-[30px]">
+                            
+                            {/* CATEQUESE */}
+                            <div className={`${cardClass} border-t-[4px] border-mostarda`}>
+                                <div className="text-mostarda text-[40px] mb-[15px]">
+                                    <i className="fa-solid fa-book-bible"></i>
+                                </div>
+                                <h3 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
+                                    Catequese
+                                </h3>
+                                <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
+                                    Preparação para a Primeira Eucaristia e Crisma, formando crianças, jovens e adultos no amor de Cristo e nos ensinamentos da Igreja.
+                                </p>
+                                <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center w-full mt-auto">
+                                    <p className="text-cinza-escuro text-[14px]">
+                                        As inscrições para novas turmas ocorrem anualmente. Fique atento aos avisos!
+                                    </p>
+                                </div>
                             </div>
-                            <h2 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
-                                Intenções de Missa
+
+                            {/* PASTORAL DA SOBRIEDADE */}
+                            <div className={`${cardClass} border-t-[4px] border-mostarda`}>
+                                <div className="text-mostarda text-[40px] mb-[15px]">
+                                    <i className="fa-solid fa-hands-holding-circle"></i>
+                                </div>
+                                <h3 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
+                                    Pastoral da Sobriedade
+                                </h3>
+                                <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
+                                    Ação concreta da Igreja que atua na prevenção, recuperação e inserção familiar de dependentes químicos, promovendo a vida.
+                                </p>
+                                <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center w-full mt-auto">
+                                    <p className="text-cinza-escuro text-[14px]">
+                                        Venha conhecer nossos encontros de apoio. Procure a Secretaria para mais informações.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* PASTORAL DA SAÚDE */}
+                            <div className={`${cardClass} border-t-[4px] border-mostarda`}>
+                                <div className="text-mostarda text-[40px] mb-[15px]">
+                                    <i className="fa-solid fa-kit-medical"></i>
+                                </div>
+                                <h3 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
+                                    Pastoral da Saúde
+                                </h3>
+                                <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
+                                    Agentes que levam a presença de Cristo e da comunidade aos irmãos enfermos nos hospitais e em suas casas, promovendo conforto.
+                                </p>
+                                <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center w-full mt-auto">
+                                    <p className="text-cinza-escuro text-[14px]">
+                                        Se você tem um familiar acamado que deseja receber visita, entre em contato.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    {/* =========================================
+                        SEÇÃO 3: MOVIMENTOS E GRUPOS
+                    ========================================= */}
+                    <section className="mb-[20px]">
+                        <div className="flex flex-col items-center mb-[40px] text-center">
+                            <h2 className="text-marrom-escuro text-[32px] md:text-[36px] font-bold flex items-center justify-center gap-[12px] mb-[10px]">
+                                <i className="fa-solid fa-fire text-marrom-claro text-[26px]"></i>
+                                Movimentos e Grupos
                             </h2>
-                            <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
-                                Reze pelos seus entes queridos falecidos, em ação de graças por aniversários ou pedidos de saúde e libertação.
-                            </p>
-                            <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center mt-auto">
-                                <p className="text-cinza-escuro text-[14px]">
-                                    Marque suas intenções presencialmente na Secretaria ou antes do início das missas.
-                                </p>
-                            </div>
+                            <div className="w-[80px] h-[4px] bg-mostarda rounded-full"></div>
                         </div>
-
-                        {/* APOSTOLADO DA ORAÇÃO */}
-                        <div className="bg-branco p-[30px] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] border-t-[4px] border-marrom-claro transition-transform duration-300 hover:-translate-y-[5px] flex flex-col">
-                            <div className="text-marrom-claro text-[40px] mb-[15px] flex justify-center">
-                                <i className="fa-solid fa-heart"></i>
-                            </div>
-                            <h2 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
-                                Apostolado da Oração
-                            </h2>
-                            <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
-                                Rede mundial de oração do Papa e movimento de devoção ao Sagrado Coração de Jesus. Unimos nossas preces diárias pelas intenções da Igreja.
-                            </p>
-                            <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center mt-auto">
-                                <p className="text-cinza-escuro text-[14px]">
-                                    As missas e reuniões ocorrem tradicionalmente na <strong>1ª Sexta-feira</strong> e no <strong>1º Domingo</strong> do mês.
+                        
+                        <div className="flex flex-wrap justify-center gap-[30px]">
+                            
+                            {/* APOSTOLADO DA ORAÇÃO */}
+                            <div className={`${cardClass} border-t-[4px] border-marrom-claro`}>
+                                <div className="text-marrom-claro text-[40px] mb-[15px]">
+                                    <i className="fa-solid fa-heart"></i>
+                                </div>
+                                <h3 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
+                                    Apostolado da Oração
+                                </h3>
+                                <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
+                                    Rede mundial de oração do Papa e movimento de devoção ao Sagrado Coração de Jesus. Unimos nossas preces diárias.
                                 </p>
+                                <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center w-full mt-auto">
+                                    <p className="text-cinza-escuro text-[14px]">
+                                        As reuniões ocorrem na <strong>1ª Sexta-feira</strong> e no <strong>1º Domingo</strong> do mês.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* PASTORAL DA SOBRIEDADE */}
-                        <div className="bg-branco p-[30px] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] border-t-[4px] border-mostarda transition-transform duration-300 hover:-translate-y-[5px] flex flex-col">
-                            <div className="text-mostarda text-[40px] mb-[15px] flex justify-center">
-                                <i className="fa-solid fa-hands-holding-circle"></i>
-                            </div>
-                            <h2 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
-                                Pastoral da Sobriedade
-                            </h2>
-                            <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
-                                Ação concreta da Igreja que atua na prevenção, recuperação e inserção familiar de dependentes químicos, promovendo a vida e a dignidade humana.
-                            </p>
-                            <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center mt-auto">
-                                <p className="text-cinza-escuro text-[14px]">
-                                    Venha conhecer os nossos encontros de apoio. Procure a Secretaria para mais informações sobre dias e horários.
+                            {/* FORMAÇÃO DE COROINHAS */}
+                            <div className={`${cardClass} border-t-[4px] border-marrom-claro`}>
+                                <div className="text-marrom-claro text-[40px] mb-[15px]">
+                                    <i className="fa-solid fa-bell"></i>
+                                </div>
+                                <h3 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
+                                    Coroinhas e Acólitos
+                                </h3>
+                                <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
+                                    Preparação litúrgica e espiritual para crianças e jovens que sentem o chamado para servir ao altar com dedicação e amor.
                                 </p>
+                                <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center w-full mt-auto">
+                                    <p className="text-cinza-escuro text-[14px]">
+                                        Os encontros ocorrem periodicamente. Procure a coordenação após as missas.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* PASTORAL DA SAÚDE */}
-                        <div className="bg-branco p-[30px] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] border-t-[4px] border-mostarda transition-transform duration-300 hover:-translate-y-[5px] flex flex-col">
-                            <div className="text-mostarda text-[40px] mb-[15px] flex justify-center">
-                                <i className="fa-solid fa-kit-medical"></i>
-                            </div>
-                            <h2 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
-                                Pastoral da Saúde
-                            </h2>
-                            <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
-                                Agentes que levam a presença de Cristo e da comunidade aos irmãos enfermos nos hospitais e em suas casas, promovendo conforto físico e espiritual.
-                            </p>
-                            <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center mt-auto">
-                                <p className="text-cinza-escuro text-[14px]">
-                                    Se você tem um familiar acamado que deseja receber visita, entre em contato conosco.
+                            {/* FORMAÇÃO DE SERVOS */}
+                            <div className={`${cardClass} border-t-[4px] border-marrom-claro`}>
+                                <div className="text-marrom-claro text-[40px] mb-[15px]">
+                                    <i className="fa-solid fa-people-group"></i>
+                                </div>
+                                <h3 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
+                                    Formação de Servos
+                                </h3>
+                                <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
+                                    Encontros de espiritualidade e capacitação para ministros, leitores, equipes de liturgia, grupos de oração e agentes.
                                 </p>
+                                <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center w-full mt-auto">
+                                    <p className="text-cinza-escuro text-[14px]">
+                                        Acompanhe nossa Agenda Paroquial para saber as datas dos retiros formativos.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* IGREJA EM AÇÃO */}
-                        <div className="bg-branco p-[30px] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] border-t-[4px] border-mostarda transition-transform duration-300 hover:-translate-y-[5px] flex flex-col">
-                            <div className="text-mostarda text-[40px] mb-[15px] flex justify-center">
-                                <i className="fa-solid fa-house-chimney-user"></i>
-                            </div>
-                            <h2 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
-                                Igreja em Ação
-                            </h2>
-                            <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
-                                Uma Igreja em saída! Missionários e voluntários que realizam visitas domiciliares, levando a Palavra de Deus, escuta e acolhimento às famílias de nossa comunidade.
-                            </p>
-                            <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center mt-auto">
-                                <p className="text-cinza-escuro text-[14px]">
-                                    Deseja receber a visita do nosso grupo em sua casa? Agende através da nossa Secretaria.
+                            {/* IGREJA EM AÇÃO */}
+                            <div className={`${cardClass} border-t-[4px] border-marrom-claro`}>
+                                <div className="text-marrom-claro text-[40px] mb-[15px]">
+                                    <i className="fa-solid fa-house-chimney-user"></i>
+                                </div>
+                                <h3 className="text-marrom-escuro text-[24px] font-bold mb-[15px] text-center">
+                                    Igreja em Ação
+                                </h3>
+                                <p className="text-cinza-escuro text-[16px] text-center mb-[20px] flex-grow">
+                                    Uma Igreja em saída! Missionários e voluntários que realizam visitas domiciliares, levando a Palavra de Deus e acolhimento.
                                 </p>
+                                <div className="bg-branco-amarelado p-[15px] rounded-[5px] text-center w-full mt-auto">
+                                    <p className="text-cinza-escuro text-[14px]">
+                                        Deseja receber a visita do nosso grupo em sua casa? Agende através da Secretaria.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                    </div>
-                </section>
+                        </div>
+                    </section>
+                </div>
 
                 {/* 3. CALL TO ACTION (CHAMADA PARA A SECRETARIA) */}
-                <section className="max-w-[800px] mx-auto px-[20px] mt-[60px]">
-                    <div className="bg-marrom-escuro text-branco p-[40px] rounded-[10px] text-center shadow-lg">
+                <section className="max-w-[800px] mx-auto px-[20px] mt-[80px]">
+                    <div className="bg-marrom-escuro text-branco p-[40px] rounded-[10px] text-center shadow-lg flex flex-col items-center">
                         <h2 className="text-[28px] font-bold mb-[15px]">Precisa de mais informações?</h2>
-                        <p className="text-[18px] mb-[30px]">
+                        <p className="text-[18px] mb-[30px] max-w-[650px]">
                             Para agendamentos de batizados, casamentos, intenções de missa, participação nas pastorais e dúvidas em geral, nossa Secretaria Paroquial está pronta para atender você.
                         </p>
                         <Link 
                             to="/contatos" 
-                            className="bg-mostarda text-marrom-escuro py-[12px] px-[30px] text-[18px] font-bold rounded-[5px] inline-flex items-center gap-[10px] transition-colors duration-300 hover:bg-marrom-claro hover:text-branco"
+                            className="bg-mostarda text-marrom-escuro py-[14px] px-[35px] text-[18px] font-bold rounded-[8px] inline-flex items-center justify-center gap-[10px] transition-all duration-300 hover:bg-marrom-claro hover:text-branco shadow-md hover:-translate-y-1"
                         >
-                            <i className="fa-brands fa-whatsapp text-[20px]"></i>
+                            <i className="fa-brands fa-whatsapp text-[22px]"></i>
                             Falar com a Secretaria
                         </Link>
                     </div>

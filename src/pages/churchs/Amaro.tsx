@@ -2,7 +2,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 // Importações das imagens (substitua pelos arquivos reais quando tiver)
-import imgFachada from '../../assets/santo_amaro/st_amaro_fachada.png'; 
+import imgFachada from '../../assets/santo_amaro/fachada-st-amaro-2.jpg'; 
 import imgInterior from '../../assets/santo_amaro/santo-amaro-interior.jpeg'; 
 import imgExtra from '../../assets/santo_amaro/santo_amaro_imagem.jpg'; 
 
@@ -92,7 +92,7 @@ export default function Amaro() {
                             <img 
                                 src={imgFachada} 
                                 alt="Fachada da Capela Santo Amaro" 
-                                className="w-full h-[450px] md:h-[500px] object-cover rounded-[8px] shadow-sm transition-transform duration-300 hover:scale-[1.02] object-center md:col-span-2"
+                                className="w-full h-[450px] md:h-[500px] object-cover object-[70%_30%] rounded-[8px] shadow-sm transition-transform duration-300 hover:scale-[1.02] object-center md:col-span-2"
                             />
                             
                             {/* Interior e Imagem: Ficam lado a lado embaixo da fachada */}

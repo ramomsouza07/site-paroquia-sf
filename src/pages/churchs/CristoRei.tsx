@@ -2,7 +2,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 // Importações das imagens apontando para a pasta "outras"
-import imgFachada from '../../assets/cristo_rei/cristo-rei-fachada.jpeg'; 
+import imgFachada from '../../assets/cristo_rei/fachada-cristo-rei-1.jpg'; 
 import imgInterior from '../../assets/outras/temp.png'; 
 import imgExtra from '../../assets/cristo_rei/cristo_rei_imagem.png'; 
 

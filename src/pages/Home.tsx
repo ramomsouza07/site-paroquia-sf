@@ -9,8 +9,8 @@ import imgFatima from "../assets/nsfatima/nsfatima-card.jpeg"
 import imgRita from "../assets/outras/temp.png"
 import imgRosario from "../assets/rosario/rosario_2.png"
 import imgAparecida from "../assets/nsaparecida/nsaparecida-fachada.jpeg"
-import imgAmaro from "../assets/santo_amaro/st_amaro_fachada.png"
-import imgCristo from "../assets/cristo_rei/cristo-rei-fachada.jpeg"
+import imgAmaro from "../assets/santo_amaro/fachada-st-amaro-2.jpg"
+import imgCristo from "../assets/cristo_rei/fachada-cristo-rei-1.jpg"
 
 
 
