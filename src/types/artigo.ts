@@ -20,3 +20,13 @@ export interface ListaArtigosResponse {
   pagina: number;
   porPagina: number;
 }
+
+// Dados enviados ao criar um artigo (POST /api/artigos, rota de admin)
+export interface CriarArtigoInput {
+  titulo: string;
+  resumo?: string;
+  conteudo: string;
+  imagemCapa?: string;
+  categoria: string;
+  publicado: boolean;
+}
